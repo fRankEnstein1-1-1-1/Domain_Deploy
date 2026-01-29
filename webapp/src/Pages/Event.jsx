@@ -13,7 +13,7 @@ import event22 from "../assets/event2.2.jpg";
 import event23 from "../assets/event2.3.jpg";
 import event24 from "../assets/event2.4.jpg";
 import event25 from "../assets/event2.5.jpg";
-import Navbar from "../components/Navbar";
+import Navbar from "../Components/Navbar";
 
 const events = [
   {

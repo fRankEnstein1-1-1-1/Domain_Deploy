@@ -1,7 +1,7 @@
 import { PlayerCard } from "../Components/Playercard";
 import { Trophy } from "lucide-react";
 import "./LeaderBoard.css";
-import Navbar from "../components/Navbar";
+import Navbar from "../Components/Navbar";
 import { useState,useEffect } from "react";
 function Leaderboard() {
    const [leaderboardData, setLeaderboardData] = useState([]);

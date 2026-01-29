@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./Faculty.css";
 import { FaUserCircle } from "react-icons/fa";
-import Navbar from "../components/Navbar";
+import Navbar from "../Components/Navbar";
 
 export default function Faculty() {
   const facultyData = [

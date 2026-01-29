@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom"; 
 import { AuthContext } from '../context/AuthContext'; // NEW
 import "./WeeklyPuzzle.css";
-import Navbar from "../components/Navbar"; 
+import Navbar from "../Components/Navbar"; 
 
 const API_BASE_URL = "https://domain-gdr1.onrender.com/api/puzzles";
 
