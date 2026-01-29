@@ -1,4 +1,4 @@
-import { PlayerCard } from "../Components/Playercard";
+import { PlayerCard } from "../Components/PlayerCard";
 import { Trophy } from "lucide-react";
 import "./LeaderBoard.css";
 import Navbar from "../Components/Navbar";
