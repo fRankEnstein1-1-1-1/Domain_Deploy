@@ -10,7 +10,7 @@ import Login from "./Pages/Login";
 import AdminResponses from "./Pages/AdminResponses";
 import Event from "./Pages/Event";
 import AdminVerify from "./Pages/AdminVerify";
-import ProtectedRoute from "./Components/ProtectedRoute"
+//import ProtectedRoute from "./Components/ProtectedRoute"
 import { AuthProvider } from "./context/AuthContext";
 import "./App.css"; 
 
@@ -29,15 +29,8 @@ export default function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/Adminverify" element={<AdminVerify/>} />
 
-         
-          <Route element={<ProtectedRoute allowedRoles={["user", "admin"]} />}/>
-            
-
-         
-          <Route element={<ProtectedRoute allowedRoles={["admin"]} />}>
             <Route path="/admin/add-puzzle" element={<AdminPuzzle />} />
             <Route path="/admin/responses" element={<AdminResponses />} />
-          </Route>
         </Routes>
       </Router>
     </AuthProvider>
