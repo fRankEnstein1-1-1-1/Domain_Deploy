@@ -10,7 +10,7 @@ import Login from "./Pages/Login";
 import AdminResponses from "./Pages/AdminResponses";
 import Event from "./Pages/Event";
 import AdminVerify from "./Pages/AdminVerify";
-import ProtectedRoute from "./components/ProtectedRoute";
+import ProtectedRoute from "./Components/ProtectedRoute"
 import { AuthProvider } from "./context/AuthContext";
 import "./App.css"; 
 
