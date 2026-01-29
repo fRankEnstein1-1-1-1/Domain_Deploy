@@ -20,8 +20,9 @@ mongoose
 // Middleware
 const allowedOrigins = [
   "http://localhost:5173",
-  "http://domain-deploy-nine.vercel.app/"
+  "https://domain-deploy-nine.vercel.app"
 ];
+
 
 app.use(
   cors({
