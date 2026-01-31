@@ -4,10 +4,10 @@ import AboutUs from "../Pages/AboutUs";
 import "./Home.css";
 
 import math1 from "../assets/image.png";
-import math2 from "../assets/group_home.png";
+import math5 from "../assets/group_home.png";
 import math3 from "../assets/groupsit.png";
 import math4 from "../assets/mondini.png";
-import math5 from "../assets/random.png";
+import math2 from "../assets/random.png";
 import Footer from "../Components/Footer";
 
 const avatarData = [

@@ -3,12 +3,11 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const navItems = [
-  { label: "About Us", type: "scroll", target: "about" },
- // { label: "Weekly Puzzles", type: "route", path: "/weekly-puzzle" },
-  { label: "Leaderboard", type: "route", path: "/leaderboard" },
-  { label: "Faculty", type: "route", path: "/faculty" },
-  { label: "Team", type: "route", path: "/team" },
   { label: "Events", type: "route", path: "/events" },
+  { label: "Leaderboard", type: "route", path: "/leaderboard" },
+  { label: "Team", type: "route", path: "/team" },
+  { label: "Faculty", type: "route", path: "/faculty" },
+  { label: "About Us", type: "scroll", target: "about" },
 ];
 
 export default function Navbar() {
