@@ -417,3 +417,47 @@ margin: 0;
   width: 12px;
   height: 12px;
 }
+/* ✅ PODIUM SECTION RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+  /* make podium stack instead of squeezing */
+  .podium-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* make each podium card full width */
+  .podium-card {
+    width: 90%;
+    max-width: 320px;
+    position: relative;
+    padding-top: 45px; /* ✅ extra top space for badge */
+  }
+
+  /* reduce badge size & move it properly */
+  .podium-badge {
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+    top: -18px;   /* ✅ pull less up */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* ✅ Extra small phones */
+@media (max-width: 480px) {
+  .podium-card {
+    width: 95%;
+    padding-top: 50px;
+  }
+
+  .podium-badge {
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+    top: -15px;
+  }
+}
