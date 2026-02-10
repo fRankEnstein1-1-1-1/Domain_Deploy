@@ -13,17 +13,22 @@ body, html, #root {
 }
 
 /* ---------- HERO ---------- */
+
 .hero {
   position: relative;
   height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 30vw;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5vw;
   overflow: hidden;
 }
 
 /* subtle math texture */
+
 .hero::before {
   content: "π ∑ ∞ ∫ √x a²+b²=c²";
   position: absolute;
@@ -38,8 +43,9 @@ body, html, #root {
 }
 
 /* ---------- HEADINGS ---------- */
+
 .hero h1 {
-  font-size: 5vw;
+  font-size: clamp(2.2rem, 5vw, 4.5rem);
   font-weight: 900;
   letter-spacing: -0.03em;
   line-height: 1.1;
@@ -49,6 +55,7 @@ body, html, #root {
 }
 
 /* RESPONSIVE HIGHLIGHT */
+
 .hero h1 .highlight {
   position: absolute;
   inset: -0.2em -0.1em;
@@ -60,16 +67,18 @@ body, html, #root {
 
 .hero h2 {
   margin-top: 0.6rem;
-  font-size: 3vw;
+  font-size: clamp(1.3rem, 3vw, 2.2rem);
   font-weight: 800;
   color: #b7aefc;
   border-right: 3px solid #cda8ff;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 100%;
   animation: typing 3s steps(22) forwards, blink 0.75s step-end infinite;
 }
 
 /* ---------- ANIMATIONS ---------- */
+
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
@@ -91,6 +100,7 @@ body, html, #root {
 }
 
 /* ---------- AVATARS ---------- */
+
 .avatars-container {
   position: absolute;
   inset: 0;
@@ -99,8 +109,8 @@ body, html, #root {
 
 .avatar {
   position: absolute;
-  width: 200px;
-  height: 200px;
+  width: clamp(85px, 12vw, 200px);
+  height: clamp(85px, 12vw, 200px);
   border-radius: 48% 52% 50% 50%;
   border: 4px solid #ffffff;
   display: flex;
@@ -130,6 +140,7 @@ body, html, #root {
 .avatar:nth-child(5) { animation-duration: 10s; }
 
 /* Accent colors */
+
 .avatar.pink { border-color: #e6b3ff; }
 .avatar.purple { border-color: #aa97f5; }
 .avatar.yellow { border-color: #f2dd8c; }
@@ -137,12 +148,13 @@ body, html, #root {
 .avatar.green { border-color: #8ee6a1; }
 
 /* ---------- SCROLL ---------- */
+
 .scroll-down {
   position: absolute;
- display: flex;
- justify-content: center;
- flex-direction: column;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
@@ -166,6 +178,7 @@ body, html, #root {
 }
 
 /* ---------- FOOTER ---------- */
+
 .footer {
   background: linear-gradient(180deg, #0c0c16, #141418);
   padding: 4rem 10vw 2.5rem;
@@ -183,71 +196,66 @@ body, html, #root {
 /* ---------- RESPONSIVE ---------- */
 
 /* Tablets */
+
 @media (max-width: 1024px) {
+
   .hero {
-    padding: 0 15vw;
-  }
-
-  .hero h1 {
-    font-size: 6vw;
-  }
-
-  .hero h2 {
-    font-size: 4vw;
-  }
-}
-
-/* Phones */
-@media (max-width: 768px) {
-  .hero {
-    height: auto;
-    min-height: 100vh;
-    padding: 20vh 8vw 10vh;
-    text-align: center;
+    padding: 0 8vw;
   }
 
   .hero::before {
-    font-size: 2rem;
-    letter-spacing: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: 1.2rem;
   }
 
-  .hero h1 {
-    font-size: 9vw;
-  }
-
-  .hero h1 .highlight {
-    border-width: 2px;
-  }
-
-  .hero h2 {
-    font-size: 5.5vw;
-    border-right: none;
-    animation: none;
-  }
-
-  .avatar {
-    width: 110px;
-    height: 110px;
-  }
 }
 
+/* Phones */
+
+@media (max-width: 768px) {
+
+  .avatars-container {
+    transform: scale(0.85);
+  }
+
+  /* controlled positioning to avoid overlap */
+
+  .avatar:nth-child(1) {
+    left: 10%;
+    top: 18%;
+  }
+
+  .avatar:nth-child(2) {
+    right: 10%;
+    top: 22%;
+  }
+
+  .avatar:nth-child(3) {
+    left: 18%;
+    bottom: 22%;
+  }
+
+  .avatar:nth-child(4) {
+    right: 18%;
+    bottom: 18%;
+  }
+
+  .avatar:nth-child(5) {
+    left: 50%;
+    top: 55%;
+    transform: translateX(-50%);
+  }
+
+}
+
+
+
 /* Tiny phones */
+
 @media (max-width: 480px) {
-  .hero h1 {
-    font-size: 10vw;
-  }
-
-  .hero h2 {
-    font-size: 6vw;
-  }
-
-  .avatar {
-    width: 85px;
-    height: 85px;
-    border-width: 3px;
-  }
 
   .footer {
-    padding: 3rem 6vw 2rem;
+    padding: 3rem 5vw 2rem;
   }
+
 }
