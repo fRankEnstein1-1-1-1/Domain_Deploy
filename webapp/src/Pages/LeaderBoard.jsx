@@ -95,7 +95,7 @@ useEffect(() => {
               </div>
               <div className="stats-divider"></div>
               <div className="stats-item">
-                <p className="stats-value">Random</p>
+                <p className="stats-value">FEB</p>
                 <p className="stats-label">Current Season</p>
               </div>
             </div>
