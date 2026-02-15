@@ -11,7 +11,7 @@ import math2 from "../assets/random.png";
 import Footer from "../Components/Footer";
 
 const avatarData = [
-  { src: math1, alt: "Mathematics illustration", bg: "pink", top: "15%", left: "10%" },
+  { src: math1, alt: "Mathematics illustration", bg: "pink", top: "9.5%", left: "10%" },
   { src: math2, alt: "Math on black background", bg: "purple", top: "5%", right: "15%" },
   { src: math3, alt: "Rubiks cube", bg: "yellow", bottom: "5%", left: "20%" },
   { src: math4, alt: "Cat studying", bg: "blue", bottom: "0%", right: "0%" },

@@ -13,6 +13,11 @@ import event22 from "../assets/event2.2.jpg";
 import event23 from "../assets/event2.3.jpg";
 import event24 from "../assets/event2.4.jpg";
 import event25 from "../assets/event2.5.jpg";
+import event31 from "../assets/event31.jpeg";
+import event32 from "../assets/event32.jpeg";
+import event33 from "../assets/event33.jpeg";
+import event34 from "../assets/event34.jpeg";
+import event35 from "../assets/event35.jpeg";
 import Navbar from "../Components/Navbar";
 
 const events = [
@@ -25,6 +30,11 @@ const events = [
     title: "Calculator Workshop",
     images: [event21, event22, event23, event24, event25],
     desc: "A hands-on session designed to unlock the full potential of scientific and programmable calculators. Participants learn shortcuts, smart tricks, and advanced functions to solve complex mathematical problems efficiently and elevate their computational skills. Fun Games were also conducted where each and every student participated with great enthusiasm!!",
+  },
+  {
+    title: "National Mathematics Day",
+    images: [event31, event32, event33, event34, event35],
+    desc: "On the occasion of National Mathematician’s Day, a week-long treasure hunt was organized by the domain. Every day, a new puzzle was published via Instagram stories, and three winners were selected based on the consistency and accuracy of their answers. It was a fun online event that saw enthusiastic participation throughout the week. On the final day, i.e., the 22nd, the last puzzle was released, leading participants to learn about Srinivasa Ramanujan.",
   },
 ];
 
